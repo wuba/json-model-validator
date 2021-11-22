@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "watch": false,
+        "alwaysStrict": true,
+        "removeComments": true,
+        "preserveWatchOutput": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": true,
+        "types": ["reflect-metadata", "node"],
+    },
+    "include": [
+        "./src/**/*"
+, "test"    ]
+}

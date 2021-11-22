@@ -1,0 +1,29 @@
+{
+    "name": "json-model-validator",
+    "version": "1.0.0-alpha.1",
+    "description": "json validator and transfer",
+    "main": "lib/index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "files": [
+        "lib",
+        "index.d.ts"
+    ],
+    "types": "index.d.ts",
+    "author": "hengg <wangliang0826@126.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc  && mv ./dist/index.d.ts ./lib && uglifyjs dist/index.js -o lib/index.js -c -m",
+        "prepublish": "tsc && mv ./dist/index.d.ts ./lib && uglifyjs dist/index.js -o lib/index.js -c -m"
+    },
+    "devDependencies": {
+        "jest": "^27.0.4",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.2",
+        "uglify-js": "^3.13.9"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.1.13"
+    }
+}
